@@ -1,0 +1,15 @@
+{
+  "originHash" : "1d2a42e38b1b93287d8e2060a06566f85d5453448d724be94bae1cd8943bce13",
+  "pins" : [
+    {
+      "identity" : "network-kit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Ibrahim3ziz/Network-Kit",
+      "state" : {
+        "branch" : "main",
+        "revision" : "84a3480ed614d922aa3527e63234df53c5c74fe8"
+      }
+    }
+  ],
+  "version" : 3
+}

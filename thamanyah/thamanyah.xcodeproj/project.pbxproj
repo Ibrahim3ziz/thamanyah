@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		8F4E3AAE2F5A5EC4002AF59A /* NetworkKit in Frameworks */ = {isa = PBXBuildFile; productRef = 8F4E3AAD2F5A5EC4002AF59A /* NetworkKit */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		8F4E3A622F5A5870002AF59A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -52,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F4E3AAE2F5A5EC4002AF59A /* NetworkKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +117,7 @@
 			);
 			name = thamanyah;
 			packageProductDependencies = (
+				8F4E3AAD2F5A5EC4002AF59A /* NetworkKit */,
 			);
 			productName = thamanyah;
 			productReference = 8F4E3A542F5A586F002AF59A /* thamanyah.app */;
@@ -195,6 +201,9 @@
 			);
 			mainGroup = 8F4E3A4B2F5A586F002AF59A;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				8F4E3AAC2F5A5EC4002AF59A /* XCRemoteSwiftPackageReference "Network-Kit" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 8F4E3A552F5A586F002AF59A /* Products */;
 			projectDirPath = "";
@@ -578,6 +587,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8F4E3AAC2F5A5EC4002AF59A /* XCRemoteSwiftPackageReference "Network-Kit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Ibrahim3ziz/Network-Kit";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8F4E3AAD2F5A5EC4002AF59A /* NetworkKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8F4E3AAC2F5A5EC4002AF59A /* XCRemoteSwiftPackageReference "Network-Kit" */;
+			productName = NetworkKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 8F4E3A4C2F5A586F002AF59A /* Project object */;
 }
