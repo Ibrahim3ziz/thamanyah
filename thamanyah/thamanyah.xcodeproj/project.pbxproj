@@ -14,6 +14,7 @@
 		8F4E3C862F5B6475002AF59A /* thamanyahTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F4E3C842F5B6475002AF59A /* thamanyahTests.swift */; };
 		8F4E3C8A2F5B6479002AF59A /* thamanyahUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F4E3C872F5B6479002AF59A /* thamanyahUITests.swift */; };
 		8F4E3C8B2F5B6479002AF59A /* thamanyahUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F4E3C882F5B6479002AF59A /* thamanyahUITestsLaunchTests.swift */; };
+		8F4FE0C92F5B696200C68B5B /* HomeDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F4FE0C82F5B695E00C68B5B /* HomeDTO.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,7 @@
 		8F4E3C842F5B6475002AF59A /* thamanyahTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = thamanyahTests.swift; sourceTree = "<group>"; };
 		8F4E3C872F5B6479002AF59A /* thamanyahUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = thamanyahUITests.swift; sourceTree = "<group>"; };
 		8F4E3C882F5B6479002AF59A /* thamanyahUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = thamanyahUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		8F4FE0C82F5B695E00C68B5B /* HomeDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDTO.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +117,7 @@
 		8F4E3C742F5B6471002AF59A /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				8F4FE0C82F5B695E00C68B5B /* HomeDTO.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -356,6 +359,7 @@
 			files = (
 				8F4E3C822F5B6471002AF59A /* ContentView.swift in Sources */,
 				8F4E3C832F5B6471002AF59A /* thamanyahApp.swift in Sources */,
+				8F4FE0C92F5B696200C68B5B /* HomeDTO.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
