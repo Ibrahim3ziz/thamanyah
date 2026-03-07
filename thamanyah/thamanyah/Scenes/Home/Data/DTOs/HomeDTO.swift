@@ -31,7 +31,7 @@ struct HomeSection: Decodable, Identifiable {
     let type: SectionDisplayType
     let contentType: ContentType
     let order: Int
-    let content: [ContentItem]
+    let content: [SectionContent]
     
     enum CodingKeys: String, CodingKey {
         case name, type, order, content
@@ -48,7 +48,7 @@ struct HomeSection: Decodable, Identifiable {
         // Decode content heterogeneously using the section's own contentType
         // Each element is decoded into the correct concrete model.
         var arrayContainer = try c.nestedUnkeyedContainer(forKey: .content)
-        var items: [ContentItem] = []
+        var items: [SectionContent] = []
         while !arrayContainer.isAtEnd {
             switch contentType {
             case .podcast:
@@ -71,7 +71,7 @@ struct HomeSection: Decodable, Identifiable {
          type: SectionDisplayType,
          contentType: ContentType,
          order: Int,
-         content: [ContentItem]) {
+         content: [SectionContent]) {
         self.name = name
         self.type = type
         self.contentType = contentType

@@ -21,7 +21,7 @@ struct HomeSectionEntity: Identifiable, Equatable {
     let type: SectionDisplayType
     let contentType: ContentType
     let order: Int
-    let content: [ContentItem]
+    let content: [SectionContent]
 }
 
 // MARK: - Mapping from DTO to Entity

@@ -1,5 +1,5 @@
 //
-//  ContentItem.swift
+//  SectionContent.swift
 //  thamanyah
 //
 //  Created by Ibrahim Abdul Aziz on 06/03/2026.
@@ -8,7 +8,7 @@
 import Foundation
 
 // MARK: - Content Item
-enum ContentItem: Identifiable {
+enum SectionContent: Identifiable {
     case podcast(Podcast)
     case episode(Episode)
     case audiobook(Audiobook)
@@ -88,8 +88,8 @@ enum ContentItem: Identifiable {
     }
 }
 
-extension ContentItem: Equatable {
-    static func == (lhs: ContentItem, rhs: ContentItem) -> Bool {
+extension SectionContent: Equatable {
+    static func == (lhs: SectionContent, rhs: SectionContent) -> Bool {
         switch (lhs, rhs) {
         case let (.podcast(a), .podcast(b)):
             return a.id == b.id
