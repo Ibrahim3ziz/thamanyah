@@ -20,6 +20,7 @@
 		8F4FE0E32F5B733200C68B5B /* HomeRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F4FE0E22F5B733200C68B5B /* HomeRepository.swift */; };
 		8F4FE0E52F5B78D200C68B5B /* HomeTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F4FE0E42F5B78CF00C68B5B /* HomeTarget.swift */; };
 		8F4FE0E72F5B799700C68B5B /* ConcreteModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F4FE0E62F5B799700C68B5B /* ConcreteModels.swift */; };
+		8F4FE0EA2F5B7D4400C68B5B /* HomeEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F4FE0E92F5B7D4000C68B5B /* HomeEntity.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		8F4FE0E22F5B733200C68B5B /* HomeRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRepository.swift; sourceTree = "<group>"; };
 		8F4FE0E42F5B78CF00C68B5B /* HomeTarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTarget.swift; sourceTree = "<group>"; };
 		8F4FE0E62F5B799700C68B5B /* ConcreteModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcreteModels.swift; sourceTree = "<group>"; };
+		8F4FE0E92F5B7D4000C68B5B /* HomeEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeEntity.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +139,7 @@
 		8F4E3C752F5B6471002AF59A /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				8F4FE0E82F5B7CD000C68B5B /* Entities */,
 				8F4FE0DA2F5B6E2600C68B5B /* Repositories */,
 			);
 			path = Domain;
@@ -262,6 +265,14 @@
 				8F4FE0E42F5B78CF00C68B5B /* HomeTarget.swift */,
 			);
 			path = Target;
+			sourceTree = "<group>";
+		};
+		8F4FE0E82F5B7CD000C68B5B /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				8F4FE0E92F5B7D4000C68B5B /* HomeEntity.swift */,
+			);
+			path = Entities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -405,6 +416,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8F4E3C822F5B6471002AF59A /* ContentView.swift in Sources */,
+				8F4FE0EA2F5B7D4400C68B5B /* HomeEntity.swift in Sources */,
 				8F4FE0E72F5B799700C68B5B /* ConcreteModels.swift in Sources */,
 				8F4FE0E52F5B78D200C68B5B /* HomeTarget.swift in Sources */,
 				8F4E3C832F5B6471002AF59A /* thamanyahApp.swift in Sources */,
