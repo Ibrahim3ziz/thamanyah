@@ -23,3 +23,20 @@ struct HomeSectionEntity: Identifiable, Equatable {
     let order: Int
     let content: [ContentItem]
 }
+
+// MARK: - Mapping from DTO to Entity
+extension HomeEntity {
+    init(dto: HomeDTOResponse) {
+        self.sections = dto.sections.map { section in
+            HomeSectionEntity(
+                name: section.name,
+                type: section.type,
+                contentType: section.contentType,
+                order: section.order,
+                content: section.content
+            )
+        }
+        self.nextPage = dto.pagination.nextPage
+        self.totalPages = dto.pagination.totalPages
+    }
+}
