@@ -33,6 +33,7 @@
 		8F4FE2C42F5CC00100C68B5B /* IBMPlexSansArabic-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8F4FE2BE2F5CC00100C68B5B /* IBMPlexSansArabic-Thin.otf */; };
 		8F4FE2C52F5CC00100C68B5B /* IBMPlexSansArabic-Text.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8F4FE2BD2F5CC00100C68B5B /* IBMPlexSansArabic-Text.otf */; };
 		8F4FE2C62F5CC00100C68B5B /* IBMPlexSansArabic-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8F4FE2B92F5CC00100C68B5B /* IBMPlexSansArabic-Light.otf */; };
+		8F4FE2C92F5CC3E700C68B5B /* SystemIcons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F4FE2C82F5CC3E700C68B5B /* SystemIcons.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +82,7 @@
 		8F4FE2BC2F5CC00100C68B5B /* IBMPlexSansArabic-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IBMPlexSansArabic-SemiBold.otf"; sourceTree = "<group>"; };
 		8F4FE2BD2F5CC00100C68B5B /* IBMPlexSansArabic-Text.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IBMPlexSansArabic-Text.otf"; sourceTree = "<group>"; };
 		8F4FE2BE2F5CC00100C68B5B /* IBMPlexSansArabic-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IBMPlexSansArabic-Thin.otf"; sourceTree = "<group>"; };
+		8F4FE2C82F5CC3E700C68B5B /* SystemIcons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemIcons.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +134,7 @@
 		8F4E3C712F5B6471002AF59A /* App */ = {
 			isa = PBXGroup;
 			children = (
+				8F4FE2AE2F5CBCCC00C68B5B /* Modifiers */,
 				8F4FE2AB2F5CBCB600C68B5B /* UIComponents */,
 			);
 			path = App;
@@ -233,6 +236,7 @@
 		8F4E3C802F5B6471002AF59A /* thamanyah */ = {
 			isa = PBXGroup;
 			children = (
+				8F4FE2C72F5CC3E400C68B5B /* Helpers */,
 				8F4E3C712F5B6471002AF59A /* App */,
 				8F4E3C722F5B6471002AF59A /* Core */,
 				8F4E3C732F5B6471002AF59A /* Resources */,
@@ -339,6 +343,14 @@
 				8F4FE2BE2F5CC00100C68B5B /* IBMPlexSansArabic-Thin.otf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		8F4FE2C72F5CC3E400C68B5B /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				8F4FE2C82F5CC3E700C68B5B /* SystemIcons.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -496,6 +508,7 @@
 				8F4FE2B52F5CBF6D00C68B5B /* Font+Extensions.swift in Sources */,
 				8F4FE0E52F5B78D200C68B5B /* HomeTarget.swift in Sources */,
 				8F4E3C832F5B6471002AF59A /* thamanyahApp.swift in Sources */,
+				8F4FE2C92F5CC3E700C68B5B /* SystemIcons.swift in Sources */,
 				8F4FE2B02F5CBD1A00C68B5B /* ShimmerModifier.swift in Sources */,
 				8F4FE0C92F5B696200C68B5B /* HomeDTO.swift in Sources */,
 				8F4FE0DE2F5B728200C68B5B /* ContentItem.swift in Sources */,
