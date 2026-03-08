@@ -102,7 +102,6 @@ private enum AppFontFamily: String {
 }
 
 private func resolveUIFont(for style: Typography) -> UIFont {
-    let descriptor = UIFontDescriptor.preferredFontDescriptor(withTextStyle: style.textStyle)
     let metrics = UIFontMetrics(forTextStyle: style.textStyle)
     
     let base: UIFont
