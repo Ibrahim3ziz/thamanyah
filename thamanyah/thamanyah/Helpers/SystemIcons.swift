@@ -10,4 +10,8 @@ enum SystemIcons {
     static let chevronRight = "chevron.right"
     static let insert = "text.insert"
     static let play = "play.fill"
+    static let empty3D = "square.stack.3d.up"
+    static let search = "magnifyingglass"
+    static let profile = "person.fill"
+    static let star = "star.hexagon.fill"
 }
