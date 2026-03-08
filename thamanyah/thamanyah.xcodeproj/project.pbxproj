@@ -52,6 +52,7 @@
 		8F4FE3CC2F5CED5900C68B5B /* DateFormatters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F4FE3CB2F5CED5900C68B5B /* DateFormatters.swift */; };
 		8F4FE3CE2F5CF8B100C68B5B /* ISO8601DateParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F4FE3CD2F5CF8B100C68B5B /* ISO8601DateParser.swift */; };
 		8F67C6392F5D026C003C645C /* mocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F67C6382F5D026C003C645C /* mocks.swift */; };
+		8F67C7582F5E3347003C645C /* HomeHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F67C7572F5E3347003C645C /* HomeHeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -119,6 +120,7 @@
 		8F4FE3CB2F5CED5900C68B5B /* DateFormatters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatters.swift; sourceTree = "<group>"; };
 		8F4FE3CD2F5CF8B100C68B5B /* ISO8601DateParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISO8601DateParser.swift; sourceTree = "<group>"; };
 		8F67C6382F5D026C003C645C /* mocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mocks.swift; sourceTree = "<group>"; };
+		8F67C7572F5E3347003C645C /* HomeHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeHeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -316,6 +318,7 @@
 				8F4FE29B2F5CB25900C68B5B /* Components */,
 				8F4FE29C2F5CB26900C68B5B /* Sections */,
 				8F4FE0CD2F5B6AF400C68B5B /* HomeView.swift */,
+				8F67C7572F5E3347003C645C /* HomeHeaderView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -651,6 +654,7 @@
 				8F4FE0DE2F5B728200C68B5B /* SectionContent.swift in Sources */,
 				8F4FE3CE2F5CF8B100C68B5B /* ISO8601DateParser.swift in Sources */,
 				8F4FE0E32F5B733200C68B5B /* HomeRepository.swift in Sources */,
+				8F67C7582F5E3347003C645C /* HomeHeaderView.swift in Sources */,
 				8F4FE0DC2F5B6E3100C68B5B /* HomeRepoInterface.swift in Sources */,
 				8F4FE2A52F5CB29600C68B5B /* SquareCardView.swift in Sources */,
 				8F4FE2A62F5CB29600C68B5B /* BigSquareCardView.swift in Sources */,
