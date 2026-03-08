@@ -24,6 +24,7 @@
 		8F4FE0EA2F5B7D4400C68B5B /* HomeEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F4FE0E92F5B7D4000C68B5B /* HomeEntity.swift */; };
 		8F4FE2AD2F5CBCBE00C68B5B /* AsyncImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F4FE2AC2F5CBCBE00C68B5B /* AsyncImage.swift */; };
 		8F4FE2B02F5CBD1A00C68B5B /* ShimmerModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F4FE2AF2F5CBD1A00C68B5B /* ShimmerModifier.swift */; };
+		8F4FE2B22F5CBECA00C68B5B /* DurationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F4FE2B12F5CBECA00C68B5B /* DurationView.swift */; };
 		8F4FE2B52F5CBF6D00C68B5B /* Font+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F4FE2B42F5CBF6400C68B5B /* Font+Extensions.swift */; };
 		8F4FE2BF2F5CC00100C68B5B /* IBMPlexSansArabic-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8F4FE2B72F5CC00100C68B5B /* IBMPlexSansArabic-Bold.otf */; };
 		8F4FE2C02F5CC00100C68B5B /* IBMPlexSansArabic-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8F4FE2BC2F5CC00100C68B5B /* IBMPlexSansArabic-SemiBold.otf */; };
@@ -75,6 +76,7 @@
 		8F4FE0E92F5B7D4000C68B5B /* HomeEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeEntity.swift; sourceTree = "<group>"; };
 		8F4FE2AC2F5CBCBE00C68B5B /* AsyncImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncImage.swift; sourceTree = "<group>"; };
 		8F4FE2AF2F5CBD1A00C68B5B /* ShimmerModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShimmerModifier.swift; sourceTree = "<group>"; };
+		8F4FE2B12F5CBECA00C68B5B /* DurationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DurationView.swift; sourceTree = "<group>"; };
 		8F4FE2B42F5CBF6400C68B5B /* Font+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Font+Extensions.swift"; sourceTree = "<group>"; };
 		8F4FE2B72F5CC00100C68B5B /* IBMPlexSansArabic-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IBMPlexSansArabic-Bold.otf"; sourceTree = "<group>"; };
 		8F4FE2B82F5CC00100C68B5B /* IBMPlexSansArabic-ExtraLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IBMPlexSansArabic-ExtraLight.otf"; sourceTree = "<group>"; };
@@ -524,6 +526,7 @@
 				8F4FE3CE2F5CF8B100C68B5B /* ISO8601DateParser.swift in Sources */,
 				8F4FE0E32F5B733200C68B5B /* HomeRepository.swift in Sources */,
 				8F4FE0DC2F5B6E3100C68B5B /* HomeRepoInterface.swift in Sources */,
+				8F4FE2B22F5CBECA00C68B5B /* DurationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
