@@ -19,7 +19,12 @@ struct HomeTarget: BaseRequest {
     
     var headers: [String : String]? = ["Content-Type": "application/json"]
     
-    var parameter: [String : String]? = [:]
+    var parameter: [String : String]?
     
     var body: [String : Any]?
+    
+    // MARK: - Init
+    init(page: Int = 1) {
+        self.parameter = ["page": "\(page)"]
+    }
 }

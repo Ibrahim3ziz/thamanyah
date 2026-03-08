@@ -9,5 +9,5 @@ import NetworkKit
 import Combine
 
 protocol HomeRepoInterface {
-    func getHomeData() -> AnyPublisher<HomeDTOResponse, NetworkError>
+    func getHomeData(page: Int) -> AnyPublisher<HomeDTOResponse, NetworkError>
 }

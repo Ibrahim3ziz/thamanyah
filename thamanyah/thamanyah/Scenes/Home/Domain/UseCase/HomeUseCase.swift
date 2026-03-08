@@ -9,7 +9,7 @@ import Combine
 import NetworkKit
 
 protocol HomeUseCaseProtocol: AnyObject {
-    func fetchHome() -> AnyPublisher<HomeEntity, NetworkError>
+    func fetchHome(page: Int) -> AnyPublisher<HomeEntity, NetworkError>
 }
 
 final class HomeUseCase {
@@ -27,8 +27,8 @@ final class HomeUseCase {
 
 // MARK: - HomeUseCaseProtocol
 extension HomeUseCase: HomeUseCaseProtocol {
-    func fetchHome() -> AnyPublisher<HomeEntity, NetworkError> {
-        repository.getHomeData()
+    func fetchHome(page: Int) -> AnyPublisher<HomeEntity, NetworkError> {
+        repository.getHomeData(page: page)
             .map { HomeEntity(dto: $0) }
             .receive(on: DispatchQueue.main)
             .eraseToAnyPublisher()

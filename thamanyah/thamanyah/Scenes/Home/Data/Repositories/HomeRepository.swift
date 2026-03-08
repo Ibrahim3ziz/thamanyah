@@ -9,7 +9,7 @@ import NetworkKit
 import Combine
 
 class HomeRepo: HomeRepoInterface {
-    func getHomeData() -> AnyPublisher<HomeDTOResponse, NetworkError> {
-        NetworkManager.shared.execute(HomeTarget(), model: HomeDTOResponse.self)
+    func getHomeData(page: Int) -> AnyPublisher<HomeDTOResponse, NetworkError> {
+        NetworkManager.shared.execute(HomeTarget(page: page), model: HomeDTOResponse.self)
     }
 }
