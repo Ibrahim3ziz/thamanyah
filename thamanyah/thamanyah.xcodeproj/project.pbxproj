@@ -23,6 +23,7 @@
 		8F4FE0E72F5B799700C68B5B /* ConcreteModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F4FE0E62F5B799700C68B5B /* ConcreteModels.swift */; };
 		8F4FE0EA2F5B7D4400C68B5B /* HomeEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F4FE0E92F5B7D4000C68B5B /* HomeEntity.swift */; };
 		8F4FE2AD2F5CBCBE00C68B5B /* AsyncImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F4FE2AC2F5CBCBE00C68B5B /* AsyncImage.swift */; };
+		8F4FE2B02F5CBD1A00C68B5B /* ShimmerModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F4FE2AF2F5CBD1A00C68B5B /* ShimmerModifier.swift */; };
 		8F4FE2B52F5CBF6D00C68B5B /* Font+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F4FE2B42F5CBF6400C68B5B /* Font+Extensions.swift */; };
 		8F4FE2BF2F5CC00100C68B5B /* IBMPlexSansArabic-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8F4FE2B72F5CC00100C68B5B /* IBMPlexSansArabic-Bold.otf */; };
 		8F4FE2C02F5CC00100C68B5B /* IBMPlexSansArabic-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8F4FE2BC2F5CC00100C68B5B /* IBMPlexSansArabic-SemiBold.otf */; };
@@ -70,6 +71,7 @@
 		8F4FE0E62F5B799700C68B5B /* ConcreteModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcreteModels.swift; sourceTree = "<group>"; };
 		8F4FE0E92F5B7D4000C68B5B /* HomeEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeEntity.swift; sourceTree = "<group>"; };
 		8F4FE2AC2F5CBCBE00C68B5B /* AsyncImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncImage.swift; sourceTree = "<group>"; };
+		8F4FE2AF2F5CBD1A00C68B5B /* ShimmerModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShimmerModifier.swift; sourceTree = "<group>"; };
 		8F4FE2B42F5CBF6400C68B5B /* Font+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Font+Extensions.swift"; sourceTree = "<group>"; };
 		8F4FE2B72F5CC00100C68B5B /* IBMPlexSansArabic-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IBMPlexSansArabic-Bold.otf"; sourceTree = "<group>"; };
 		8F4FE2B82F5CC00100C68B5B /* IBMPlexSansArabic-ExtraLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IBMPlexSansArabic-ExtraLight.otf"; sourceTree = "<group>"; };
@@ -316,6 +318,14 @@
 			path = UIComponents;
 			sourceTree = "<group>";
 		};
+		8F4FE2AE2F5CBCCC00C68B5B /* Modifiers */ = {
+			isa = PBXGroup;
+			children = (
+				8F4FE2AF2F5CBD1A00C68B5B /* ShimmerModifier.swift */,
+			);
+			path = Modifiers;
+			sourceTree = "<group>";
+		};
 		8F4FE2B62F5CBF9000C68B5B /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
@@ -486,6 +496,7 @@
 				8F4FE2B52F5CBF6D00C68B5B /* Font+Extensions.swift in Sources */,
 				8F4FE0E52F5B78D200C68B5B /* HomeTarget.swift in Sources */,
 				8F4E3C832F5B6471002AF59A /* thamanyahApp.swift in Sources */,
+				8F4FE2B02F5CBD1A00C68B5B /* ShimmerModifier.swift in Sources */,
 				8F4FE0C92F5B696200C68B5B /* HomeDTO.swift in Sources */,
 				8F4FE0DE2F5B728200C68B5B /* ContentItem.swift in Sources */,
 				8F4FE2AD2F5CBCBE00C68B5B /* AsyncImage.swift in Sources */,
