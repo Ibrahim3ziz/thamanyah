@@ -142,6 +142,7 @@
 		8F4E3C732F5B6471002AF59A /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				8F4E3C7D2F5B6471002AF59A /* Assets.xcassets */,
 				8F4FE2B62F5CBF9000C68B5B /* Fonts */,
 			);
 			path = Resources;
@@ -231,7 +232,6 @@
 				8F4E3C722F5B6471002AF59A /* Core */,
 				8F4E3C732F5B6471002AF59A /* Resources */,
 				8F4E3C7C2F5B6471002AF59A /* Scenes */,
-				8F4E3C7D2F5B6471002AF59A /* Assets.xcassets */,
 				8F4E3C7E2F5B6471002AF59A /* ContentView.swift */,
 				8F4E3C7F2F5B6471002AF59A /* thamanyahApp.swift */,
 			);
