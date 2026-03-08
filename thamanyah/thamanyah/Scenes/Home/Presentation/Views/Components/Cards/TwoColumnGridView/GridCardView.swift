@@ -48,13 +48,13 @@ struct GridCardView: View {
                     Button(action: {}) {
                         Image(systemName: SystemIcons.insert)
                             .foregroundColor(.gray)
-                            .font(.system(size: 16))
+                            .typography(.callout)
                     }
                     
                     ShareLink(item: title ?? "") {
                         Image(systemName: SystemIcons.ellipsis)
                             .foregroundColor(.gray)
-                            .font(.system(size: 16))
+                            .typography(.callout)
                     }
                 }
                 .padding(.top, 4)

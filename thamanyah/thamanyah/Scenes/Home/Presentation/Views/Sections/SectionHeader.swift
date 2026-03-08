@@ -24,7 +24,7 @@ struct SectionHeader: View {
             Button(action: { onTap?() }) {
                 Image(systemName: SystemIcons.chevronRight)
                     .foregroundColor(.gray)
-                    .font(.system(size: 14, weight: .semibold))
+                    .typography(.subheadline)
             }
         }
         .padding(.horizontal)

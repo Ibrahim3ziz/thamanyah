@@ -45,7 +45,7 @@ struct QueueCardView: View {
                         .overlay(
                             Image(systemName: SystemIcons.play)
                                 .foregroundColor(.black)
-                                .font(.title3)
+                                .typography(.title3)
                         )
                 }
             }

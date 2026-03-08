@@ -18,7 +18,7 @@ struct DurationView: View {
     var body: some View {
         HStack(spacing: 4) {
             Image(systemName: SystemIcons.play)
-                .font(.system(size: 8))
+                .typography(.caption2)
             
             Text(formattedDuration)
                 .typography(.caption1)
