@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		8F4E3AAE2F5A5EC4002AF59A /* NetworkKit in Frameworks */ = {isa = PBXBuildFile; productRef = 8F4E3AAD2F5A5EC4002AF59A /* NetworkKit */; };
 		8F4E3C812F5B6471002AF59A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F4E3C7D2F5B6471002AF59A /* Assets.xcassets */; };
-		8F4E3C822F5B6471002AF59A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F4E3C7E2F5B6471002AF59A /* ContentView.swift */; };
 		8F4E3C832F5B6471002AF59A /* thamanyahApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F4E3C7F2F5B6471002AF59A /* thamanyahApp.swift */; };
 		8F4E3C862F5B6475002AF59A /* thamanyahTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F4E3C842F5B6475002AF59A /* thamanyahTests.swift */; };
 		8F4E3C8A2F5B6479002AF59A /* thamanyahUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F4E3C872F5B6479002AF59A /* thamanyahUITests.swift */; };
@@ -61,7 +60,6 @@
 		8F4E3A612F5A5870002AF59A /* thamanyahTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = thamanyahTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F4E3A6B2F5A5870002AF59A /* thamanyahUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = thamanyahUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F4E3C7D2F5B6471002AF59A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		8F4E3C7E2F5B6471002AF59A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		8F4E3C7F2F5B6471002AF59A /* thamanyahApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = thamanyahApp.swift; sourceTree = "<group>"; };
 		8F4E3C842F5B6475002AF59A /* thamanyahTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = thamanyahTests.swift; sourceTree = "<group>"; };
 		8F4E3C872F5B6479002AF59A /* thamanyahUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = thamanyahUITests.swift; sourceTree = "<group>"; };
@@ -247,7 +245,6 @@
 				8F4E3C722F5B6471002AF59A /* Core */,
 				8F4E3C732F5B6471002AF59A /* Resources */,
 				8F4E3C7C2F5B6471002AF59A /* Scenes */,
-				8F4E3C7E2F5B6471002AF59A /* ContentView.swift */,
 				8F4E3C7F2F5B6471002AF59A /* thamanyahApp.swift */,
 			);
 			path = thamanyah;
@@ -509,7 +506,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8F4E3C822F5B6471002AF59A /* ContentView.swift in Sources */,
 				8F4FE0D92F5B6D7900C68B5B /* HomeUseCase.swift in Sources */,
 				8F4FE0EA2F5B7D4400C68B5B /* HomeEntity.swift in Sources */,
 				8F4FE0E72F5B799700C68B5B /* ConcreteModels.swift in Sources */,
@@ -519,7 +515,6 @@
 				8F4FE2C92F5CC3E700C68B5B /* SystemIcons.swift in Sources */,
 				8F4FE2B02F5CBD1A00C68B5B /* ShimmerModifier.swift in Sources */,
 				8F4FE0C92F5B696200C68B5B /* HomeDTO.swift in Sources */,
-				8F4FE0DE2F5B728200C68B5B /* ContentItem.swift in Sources */,
 				8F4FE2AD2F5CBCBE00C68B5B /* AsyncImage.swift in Sources */,
 				8F4FE3CC2F5CED5900C68B5B /* DateFormatters.swift in Sources */,
 				8F4FE0DE2F5B728200C68B5B /* SectionContent.swift in Sources */,
