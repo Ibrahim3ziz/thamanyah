@@ -11,7 +11,7 @@ import SwiftUI
 struct thamanyahApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            HomeView(viewModel: HomeViewModel(homeUseCase: HomeUseCase(repository: HomeRepo())))
         }
     }
 }
