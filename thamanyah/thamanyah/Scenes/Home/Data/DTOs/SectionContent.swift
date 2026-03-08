@@ -68,24 +68,33 @@ enum SectionContent: Identifiable {
         }
     }
     
+    var duration: Int? {
+        switch self {
+        case .podcast(let podcast):
+            return podcast.duration
+        case .episode(let episode):
+            return episode.duration
+        case .audiobook(let audiobook):
+            return audiobook.duration
+        case .audioArticle(let audioArticle):
+            return audioArticle.duration
+        }
+    }
+    
     var durationFormatted: String? {
-        let seconds: Int?
+        let raw: String?
         switch self {
         case .podcast(let p):
-            seconds = p.duration
+            raw = Formatters.briefHM.string(from: TimeInterval(p.duration ?? 0))
         case .episode(let e):
-            seconds = e.duration
+            raw = Formatters.briefHM.string(from: TimeInterval(e.duration ?? 0))
         case .audiobook(let b):
-            seconds = b.duration
+            raw = Formatters.briefHM.string(from: TimeInterval(b.duration ?? 0))
         case .audioArticle(let a):
-            seconds = a.duration
+            raw = Formatters.briefHM.string(from: TimeInterval(a.duration ?? 0))
         }
-        guard let s = seconds, s > 0 else { return nil }
-        let mins = s / 60
-        guard mins >= 60 else { return "\(mins) min" }
-        let h = mins / 60; let m = mins % 60
-        return m > 0 ? "\(h)h \(m)m" : "\(h)h"
-    }
+        return raw
+    }    
 }
 
 extension SectionContent: Equatable {
