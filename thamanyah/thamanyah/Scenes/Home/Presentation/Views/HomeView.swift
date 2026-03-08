@@ -32,12 +32,28 @@ struct HomeView: View {
                 }
                 .padding()
             } else if viewModel.sections.isEmpty {
-                ContentUnavailableView("No content", systemImage: "square.stack.3d.up")
+                ContentUnavailableView("No content", systemImage: SystemIcons.empty3D)
             } else {
                 ScrollView {
                     LazyVStack(alignment: .leading, spacing: 24) {
                         ForEach(viewModel.sections) { section in
                             sectionView(for: section)
+                                .onAppear {
+                                    // Trigger pagination when the last section appears
+                                    if section.id == viewModel.sections.last?.id {
+                                        viewModel.loadMore()
+                                    }
+                                }
+                        }
+                        
+                        // Loading indicator for pagination
+                        if viewModel.isLoadingMore {
+                            HStack {
+                                Spacer()
+                                ProgressView()
+                                    .padding()
+                                Spacer()
+                            }
                         }
                     }
                     .padding(.vertical, 16)
