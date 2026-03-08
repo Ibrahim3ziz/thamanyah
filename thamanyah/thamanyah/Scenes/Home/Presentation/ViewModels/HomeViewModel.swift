@@ -28,4 +28,21 @@ final class HomeViewModel: ObservableObject {
         self.homeUseCase = homeUseCase
     }
     
+    // MARK: - Actions
+    func load() {
+        isLoading = true
+        errorMessage = nil
+        
+        homeUseCase.fetchHome()
+            .sink { [weak self] completion in
+                guard let self = self else { return }
+                self.isLoading = false
+                if case let .failure(error) = completion {
+                    self.errorMessage = error.localizedDescription
+                }
+            } receiveValue: { [weak self] entity in
+                self?.sections = entity.sections.sorted { $0.order < $1.order }
+            }
+            .store(in: &cancellables)
+    }
 }
