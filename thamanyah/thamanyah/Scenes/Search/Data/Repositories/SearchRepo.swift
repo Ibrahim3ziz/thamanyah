@@ -8,8 +8,18 @@
 import NetworkKit
 import Combine
 
-class SearchRepo: SearchRepoInterface {
+final class SearchRepo: SearchRepoInterface {
+    
+    // MARK: - Dependencies
+    private let networkService: NetworkServiceProtocol
+    
+    // MARK: - Init
+    init(networkService: NetworkServiceProtocol = DefaultNetworkService.shared) {
+        self.networkService = networkService
+    }
+    
+    // MARK: - SearchRepoInterface
     func search(query: String) -> AnyPublisher<SearchDTOResponse, NetworkError> {
-        NetworkManager.shared.execute(SearchTarget(query: query), model: SearchDTOResponse.self)
+        networkService.execute(SearchTarget(query: query), model: SearchDTOResponse.self)
     }
 }

@@ -8,8 +8,18 @@
 import NetworkKit
 import Combine
 
-class HomeRepo: HomeRepoInterface {
+final class HomeRepo: HomeRepoInterface {
+    
+    // MARK: - Depenencies
+    private let networkService: NetworkServiceProtocol
+    
+    // MARK: - Init
+    init(networkService: NetworkServiceProtocol = DefaultNetworkService.shared) {
+        self.networkService = networkService
+    }
+    
+    // MARK: - HomeRepoInterface
     func getHomeData(page: Int) -> AnyPublisher<HomeDTOResponse, NetworkError> {
-        NetworkManager.shared.execute(HomeTarget(page: page), model: HomeDTOResponse.self)
+        networkService.execute(HomeTarget(page: page), model: HomeDTOResponse.self)
     }
 }
