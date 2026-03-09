@@ -42,7 +42,9 @@ final class thamanyahUITests: XCTestCase {
     func testNavigateToSearch() throws {
         // Test opening search screen
         
+        // Wait for app to load
         sleep(2)
+        
         // Look for search button or icon in navigation
         // Try different possible search elements
         let searchButton = app.buttons.matching(NSPredicate(format: "label CONTAINS[c] 'search' OR identifier CONTAINS[c] 'search'")).firstMatch
