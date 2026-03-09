@@ -244,6 +244,7 @@
 		8F4E3A4B2F5A586F002AF59A = {
 			isa = PBXGroup;
 			children = (
+				8F4BB7862F5F913A00407EEF /* README.md */,
 				8F4E3C802F5B6471002AF59A /* thamanyah */,
 				8F4E3C852F5B6475002AF59A /* thamanyahTests */,
 				8F4E3C892F5B6479002AF59A /* thamanyahUITests */,
@@ -402,7 +403,6 @@
 			children = (
 				8F4E3C872F5B6479002AF59A /* thamanyahUITests.swift */,
 				8F4E3C882F5B6479002AF59A /* thamanyahUITestsLaunchTests.swift */,
-				8F4BB7862F5F913A00407EEF /* README.md */,
 			);
 			path = thamanyahUITests;
 			sourceTree = "<group>";
