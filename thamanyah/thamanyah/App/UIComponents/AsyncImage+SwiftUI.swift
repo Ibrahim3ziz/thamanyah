@@ -7,13 +7,14 @@
 
 import SwiftUI
 
-// MARK: - AsyncImage
+// MARK: - AsyncImage with Caching
 struct AsyncImage: View {
     let url: URL?
     var size: CGFloat? = 140
     var cornerRadius: CGFloat = 16
     
     @State private var image: UIImage?
+    @State private var isLoading = false
     
     var body: some View {
         Group {
@@ -35,18 +36,21 @@ struct AsyncImage: View {
     }
     
     private func loadImage() async {
-        image = nil
         guard let url else { return }
-        do {
-            let (data, _) = try await URLSession.shared.data(from: url)
-            if let downloaded = UIImage(data: data) {
-                image = downloaded
-            }
-        } catch {
-            if !(error is CancellationError) {
-#if DEBUG
-                print("⚠️ Failed to load image: \(error.localizedDescription)")
-#endif
+        
+        // Check if already loading
+        guard !isLoading else { return }
+        
+        isLoading = true
+        
+        // Use ImageLoader with caching
+        await MainActor.run {
+            ImageLoader.shared.loadImage(from: url.absoluteString) { [url] loadedImage in
+                // Only update if URL hasn't changed
+                if self.url == url {
+                    self.image = loadedImage
+                    self.isLoading = false
+                }
             }
         }
     }
