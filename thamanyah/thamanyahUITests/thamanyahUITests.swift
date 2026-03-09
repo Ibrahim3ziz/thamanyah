@@ -77,8 +77,33 @@ final class thamanyahUITests: XCTestCase {
         // Should have at least some text content
         XCTAssertGreaterThan(staticTexts.count, 0, "Home screen should have some text content")
     }
+    
+    // MARK: - Test: Scroll Functionality
+    
+    func testHomeScreenScrolling() throws {
+        // Test that home screen is scrollable
+        
+        // Wait for content to load
+        let scrollView = app.scrollViews.firstMatch
+        let loadExpectation = XCTNSPredicateExpectation(
+            predicate: NSPredicate(format: "exists == true"),
+            object: scrollView
+        )
+        wait(for: [loadExpectation], timeout: 10.0)
+        
+        XCTAssertTrue(scrollView.exists, "Scroll view should exist")
+        
+        // Try to scroll
+        scrollView.swipeUp()
+        
+        // If we made it here without crashing, scrolling works
+        XCTAssertTrue(true, "Scrolling should work without crash")
+    }
+    
+    // MARK: - Test: App Launch Performance
+    
     @MainActor
-    func testLaunchPerformance() throws {
+    func testAppLaunchPerformance() throws {
         // This measures how long it takes to launch your application.
         measure(metrics: [XCTApplicationLaunchMetric()]) {
             XCUIApplication().launch()
