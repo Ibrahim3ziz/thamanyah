@@ -32,9 +32,9 @@ struct HomeView: View {
                 } else if let message = viewModel.errorMessage {
                     VStack(spacing: 12) {
                         Text("Something went wrong")
-                            .typography(.headline)
+                            .font(.headline)
                         Text(message)
-                            .typography(.subheadline)
+                            .font(.subheadline)
                             .foregroundStyle(.secondary)
                         Button("Retry") {
                             viewModel.load()
@@ -76,6 +76,15 @@ struct HomeView: View {
             }
         }
         .task { viewModel.load() }
+        .fullScreenCover(isPresented: $showSearch) {
+            SearchViewControllerRepresentable(
+                viewModel: SearchViewModel(
+                    searchUseCase: SearchUseCase(
+                        repository: SearchRepo()
+                    )
+                )
+            )
+        }
     }
     
     @ViewBuilder
@@ -110,7 +119,16 @@ struct HomeView: View {
         }
     }
     
+    // MARK: - Actions
     private func handleSeeAll(for section: HomeSectionEntity) {
-        // TODO: Wire up navigation
+        // TODO: Navigate to sections
+    }
+    
+    private func handleProfileTap() {
+        // TODO: Navigate to profile
+    }
+    
+    private func handleSearchTap() {
+        showSearch = true
     }
 }
