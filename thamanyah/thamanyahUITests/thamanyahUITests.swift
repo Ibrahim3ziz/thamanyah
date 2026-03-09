@@ -8,27 +8,33 @@
 import XCTest
 
 final class thamanyahUITests: XCTestCase {
-
+    
+    var app: XCUIApplication!
+    
     override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-
-        // In UI tests it is usually best to stop immediately when a failure occurs.
         continueAfterFailure = false
-
-        // In UI tests it’s important to set the initial state - such as interface orientation - required for your tests before they run. The setUp method is a good place to do this.
-    }
-
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
-
-    @MainActor
-    func testExample() throws {
-        // UI tests must launch the application that they test.
-        let app = XCUIApplication()
+        app = XCUIApplication()
         app.launch()
-
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    }
+    
+    override func tearDownWithError() throws {
+        app = nil
+    }
+    
+    // MARK: - Test: Home Screen Loading
+    func testHomeScreenLoads() throws {
+        // Verify that the app launches and home screen loads
+        
+        // Wait for any scroll view or content to appear (indicates home screen loaded)
+        let scrollView = app.scrollViews.firstMatch
+        let loadExpectation = XCTNSPredicateExpectation(
+            predicate: NSPredicate(format: "exists == true"),
+            object: scrollView
+        )
+        wait(for: [loadExpectation], timeout: 10.0)
+        
+        // Verify scroll view exists
+        XCTAssertTrue(scrollView.exists, "Home screen scroll view should exist")
     }
 
     @MainActor
