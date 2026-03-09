@@ -14,4 +14,5 @@ enum SystemIcons {
     static let search = "magnifyingglass"
     static let profile = "person.fill"
     static let star = "star.hexagon.fill"
+    static let duration = "clock.fill"
 }

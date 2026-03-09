@@ -131,15 +131,15 @@ private func resolveUIFont(for style: Typography) -> UIFont {
 
 // MARK: - UIKit Convenience
 public extension UIFont {
-    static func app(_ style: Typography) -> UIFont {
+    static func typography(_ style: Typography) -> UIFont {
         resolveUIFont(for: style)
     }
 }
 
 // MARK: - SwiftUI Convenience
 public extension Font {
-    static func app(_ style: Typography) -> Font {
-        Font(UIFont.app(style))
+    static func typography(_ style: Typography) -> Font {
+        Font(UIFont.typography(style))
     }
 }
 
@@ -148,7 +148,7 @@ public struct TypographyModifier: ViewModifier {
     
     public func body(content: Content) -> some View {
         content
-            .font(.app(style))
+            .font(.typography(style))
             .environment(\.dynamicTypeSize, .large)
     }
 }
