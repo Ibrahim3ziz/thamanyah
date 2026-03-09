@@ -12,6 +12,7 @@
 		8F4BB76B2F5F88FA00407EEF /* MockSearchRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F4BB76A2F5F88FA00407EEF /* MockSearchRepository.swift */; };
 		8F4BB76D2F5F891600407EEF /* MockSearchUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F4BB76C2F5F891600407EEF /* MockSearchUseCase.swift */; };
 		8F4BB76F2F5F89B300407EEF /* MockNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F4BB76E2F5F89B300407EEF /* MockNetworkService.swift */; };
+		8F4BB7872F5F913A00407EEF /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 8F4BB7862F5F913A00407EEF /* README.md */; };
 		8F4E3AAE2F5A5EC4002AF59A /* NetworkKit in Frameworks */ = {isa = PBXBuildFile; productRef = 8F4E3AAD2F5A5EC4002AF59A /* NetworkKit */; };
 		8F4E3C812F5B6471002AF59A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F4E3C7D2F5B6471002AF59A /* Assets.xcassets */; };
 		8F4E3C832F5B6471002AF59A /* thamanyahApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F4E3C7F2F5B6471002AF59A /* thamanyahApp.swift */; };
@@ -103,6 +104,7 @@
 		8F4BB76A2F5F88FA00407EEF /* MockSearchRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockSearchRepository.swift; sourceTree = "<group>"; };
 		8F4BB76C2F5F891600407EEF /* MockSearchUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockSearchUseCase.swift; sourceTree = "<group>"; };
 		8F4BB76E2F5F89B300407EEF /* MockNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNetworkService.swift; sourceTree = "<group>"; };
+		8F4BB7862F5F913A00407EEF /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		8F4E3A542F5A586F002AF59A /* thamanyah.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = thamanyah.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F4E3A612F5A5870002AF59A /* thamanyahTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = thamanyahTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F4E3A6B2F5A5870002AF59A /* thamanyahUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = thamanyahUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -400,6 +402,7 @@
 			children = (
 				8F4E3C872F5B6479002AF59A /* thamanyahUITests.swift */,
 				8F4E3C882F5B6479002AF59A /* thamanyahUITestsLaunchTests.swift */,
+				8F4BB7862F5F913A00407EEF /* README.md */,
 			);
 			path = thamanyahUITests;
 			sourceTree = "<group>";
@@ -800,6 +803,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F4BB7872F5F913A00407EEF /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
