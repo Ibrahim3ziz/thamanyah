@@ -63,6 +63,20 @@ final class thamanyahUITests: XCTestCase {
         }
     }
     
+    // MARK: - Test: Home Screen Elements
+    
+    func testHomeScreenHasContent() throws {
+        // Verify home screen has some content
+        
+        // Wait for loading to complete
+        sleep(3)
+        
+        // Check if there are any static texts (section titles, content titles, etc.)
+        let staticTexts = app.staticTexts.allElementsBoundByIndex
+        
+        // Should have at least some text content
+        XCTAssertGreaterThan(staticTexts.count, 0, "Home screen should have some text content")
+    }
     @MainActor
     func testLaunchPerformance() throws {
         // This measures how long it takes to launch your application.
