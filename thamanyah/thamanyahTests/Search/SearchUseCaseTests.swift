@@ -10,38 +10,6 @@ import Combine
 import NetworkKit
 @testable import thamanyah
 
-// MARK: - Mock Search Repository
-final class MockSearchRepository: SearchRepoInterface {
-    
-    var mockResponse: SearchDTOResponse?
-    var mockError: NetworkError?
-    private(set) var searchCallCount = 0
-    private(set) var lastSearchQuery: String?
-    
-    func search(query: String) -> AnyPublisher<SearchDTOResponse, NetworkError> {
-        searchCallCount += 1
-        lastSearchQuery = query
-        
-        if let error = mockError {
-            return Fail(error: error).eraseToAnyPublisher()
-        }
-        
-        if let response = mockResponse {
-            return Just(response)
-                .setFailureType(to: NetworkError.self)
-                .eraseToAnyPublisher()
-        }
-        
-        return Fail(error: NetworkError(errorType: .decodingError)).eraseToAnyPublisher()
-    }
-    
-    func reset() {
-        mockResponse = nil
-        mockError = nil
-        searchCallCount = 0
-        lastSearchQuery = nil
-    }
-}
 
 // MARK: - Search Use Case Tests
 final class SearchUseCaseTests: XCTestCase {
